@@ -56,6 +56,13 @@
 #btn_view{
     background: teal;
     margin-left: 5px;
+    
+}
+#btn_view1{
+    background: teal;
+    margin-left: 70px;
+    margin-top: 10px;
+    
 }
 .product_card input{
     position: absolute;
