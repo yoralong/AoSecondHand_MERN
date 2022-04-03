@@ -15,7 +15,7 @@ function App() {
           <MainPages />
           <MessengerCustomerChat
           pageId="110672616981089"
-          appId="638516363904741"/>
+          appId="1030574577813073"/>
         </div>
       </Router>
     </DataProvider>
