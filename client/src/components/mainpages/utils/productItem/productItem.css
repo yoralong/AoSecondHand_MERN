@@ -53,17 +53,62 @@
     background: #555;
     margin-right: 5px;
 }
+#btn_buy:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #555;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#btn_buy:first-child:hover{
+ 
+    background-color: #bf8a49;
+    color: #ffff;
+    
+}
+
 #btn_view{
     background: teal;
     margin-left: 5px;
     
 }
-#btn_view1{
-    background: teal;
-    margin-left: 70px;
-    margin-top: 10px;
-    
+#btn_view:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #555;
+    border: 2px solid black;
+    cursor: pointer;
 }
+#btn_view:first-child:hover{
+    background-color: #bf8a49;
+    color: #ffff;
+}
+#btn_view:last-child{
+    background-color: teal;
+    color: #fff;
+    border: none;
+    border: 1px solid teal;
+}
+#btn-view:last-child:hover{
+    background-color: #dddd;
+    color: #333;
+}
+#btn_view1{
+	width: 255px;
+	height: 38px;
+	background: teal;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 14px;
+	font-family: "Segoe UI";
+	cursor: pointer;
+}
+#btn_view1:hover{
+	background-image: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    color: whitesmoke;
+}
+
 .product_card input{
     position: absolute;
     width: 25px;

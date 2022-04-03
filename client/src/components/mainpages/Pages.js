@@ -13,6 +13,7 @@ import CreateProduct from './createProduct/CreateProduct'
 import Cart from './cart/Cart'
 import Notfound from './utils/not_found/NotFound';
 import {GlobalState} from '../../GlobalState'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 function Pages() {
     const state= useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged

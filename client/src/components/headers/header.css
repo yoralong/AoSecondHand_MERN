@@ -7,13 +7,14 @@ header{
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ddd;
+    color: cornflowerblue;
 }
 header .logo{
     flex: 1;
 }
 header a{
     text-transform: uppercase;
-    color: #555;
+    color: cornflowerblue;
 }
 header ul li{
     display: inline-block;
