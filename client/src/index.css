@@ -133,3 +133,5 @@ button{
   }
 }
 
+/* ------------- About -------------- */
+@import url("./components/mainpages/about/about.css");

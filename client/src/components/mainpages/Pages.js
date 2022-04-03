@@ -8,12 +8,13 @@ import OrderHistory from './history/OrderHistory'
 import OrderDetail from './history/OrderDetail'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
+import About from './about/About'
 
 
 import Cart from './cart/Cart'
 import Notfound from './utils/not_found/NotFound';
 import {GlobalState} from '../../GlobalState'
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 function Pages() {
     const state= useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
@@ -32,6 +33,8 @@ function Pages() {
 
             <Route path="/create_product" exact component={isAdmin ? CreateProduct :Notfound} />
             <Route path="/edit_product/:id" exact component={isAdmin ? CreateProduct :Notfound} />
+            
+            <Route path="/about" exact component={isAdmin ? About:About} />
 
 
 
