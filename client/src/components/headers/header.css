@@ -16,10 +16,55 @@ header a{
     text-transform: uppercase;
     color: cornflowerblue;
 }
+
+
+.btn-login {
+    background: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 62.5%;
+    }
+    
+    a { text-decoration: none;}
+    
+    #btn-outline {
+    margin: 30px auto 0;
+      height: 40px;
+      display: block;
+    }
+    
+    #btn-outline .shape {
+      stroke-dasharray: 100 310;
+      stroke-dashoffset: -304;
+      stroke-width: 5px;
+      fill: transparent;
+      stroke: blue;
+      -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+      -ms-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+      transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    }
+    
+    #btn-outline .text { 
+      top: -34px;
+      position: relative;
+      color: blue;
+      font-size: 1.5em;
+    
+      margin-right: -4px;
+    }
+    
+     #btn-outline:hover .shape {
+       stroke-width: 2px;
+      stroke-dashoffset: 0;
+      stroke-dasharray: 550;
+    }
+
+
+
 header ul li{
     display: inline-block;
     opacity: 0.7;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 header ul li:hover{
     opacity: 1;

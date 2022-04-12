@@ -28,18 +28,47 @@ function Login (){
     }
 
     return (
-        <div className="login-page">
-            <form onSubmit={loginSubmit}>
-                <h2>Login</h2>
-                <input type="email" name="email" required placeholder="email" value={user.email} onChange={onChangeInput}/>
-                <input type="password" name="password" required autoComplete="on" placeholder="Password" value={user.password} onChange={onChangeInput}/>
 
-                <div className="row">
-                    <button typeof="submit">Login</button>
-                    <Link to="/register">Register</Link>
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <form onSubmit={loginSubmit}>
+                        <div class="user-box">
+                            <input type="email" name="email" required placeholder="" value={user.email} onChange={onChangeInput}/>
+                            <label>Username</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="password" required autoComplete="on" placeholder="" value={user.password} onChange={onChangeInput}/>
+                            <label>Password</label>
+                        </div>
+                        <div className="row">
+                            <button typeof="submit" class="animated-button1"><span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>Login</button>
+                            <Link to="/register" class="signup">Register</Link>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
+
+
+
+                    // <div class="login-page">
+                    //     <h2>Login</h2>
+                    //     <form onSubmit={loginSubmit}>
+                    //         <input type="email" name="email" required placeholder="email" value={user.email} onChange={onChangeInput}/>
+                    //         <input type="password" name="password" required autoComplete="on" placeholder="password" value={user.password} onChange={onChangeInput}/>
+                    
+                    //         <div className="row">
+                    //             <button typeof="submit" class="animated-button1"><span></span>
+                    //             <span></span>
+                    //             <span></span>
+                    //             <span></span>Login</button>
+                    //             <Link to="/register">Register</Link>
+                    //         </div>
+                    //     </form>
+                    // </div>
+
+        
     )
 }
 

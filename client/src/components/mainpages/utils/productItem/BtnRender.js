@@ -13,18 +13,19 @@ function BtnRender({product}) {
                 isAdmin ? 
                 <>
                     
-                    <Link id="btn_view1" to={`/edit_product/${product._id}`}>
+                    <Link id="btn_view1" to={`/edit_product/${product._id}`}><button class="custom-btnn btn-8"><span>Edit</span></button>
                         
-                        Edit 
+                    
 
                     </Link>
+                    
                 </>
                 : <>
-                    <Link id="btn_buy" to="#!" onClick={() => addCart(product)}>
-                        Buy
+                    <Link id="btn_buy" to="#!" onClick={() => addCart(product)}><button class="custom-btn btn-9">Buy</button>
+                        
                     </Link>
-                    <Link id="btn_view" to={`/detail/${product._id}`}>
-                        View
+                    <Link id="btn_view" to={`/detail/${product._id}`}><button class="custom-btn btn-7"><span>View</span></button>
+                        
                     </Link>
                 </>
                 

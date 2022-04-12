@@ -3,6 +3,7 @@ import {GlobalState} from '../../GlobalState'
 import Menu from './icon/menu.svg'
 import Close from './icon/close.svg'
 import Cart from './icon/cart.svg'
+
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 
@@ -24,8 +25,23 @@ function Header() {
     const adminRouter = () =>{
         return(
             <>
-                <li><Link to="/create_product">Create Product</Link></li>
-                <li><Link to="/category">Categories</Link></li>
+                <li><Link to="/create_product">
+                <div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="100" xmlns="#">
+                                <rect class="shape" height="40" width="100"></rect>
+                            </svg>
+                            <div class="text">Create</div>
+                        </a>
+                    </div></Link></li>
+                <li><Link to="/category"><div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="110" xmlns="#">
+                                <rect class="shape" height="40" width="110"></rect>
+                            </svg>
+                            <div class="text">Categories</div>
+                        </a>
+                    </div></Link></li>
             </>
         )
     }
@@ -33,8 +49,26 @@ function Header() {
     const loggedRouter = () =>{
         return(
             <>
-                <li><Link to="/history">History</Link></li>
-                <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
+                <li><Link to="/history">
+                <div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="100" xmlns="#">
+                                <rect class="shape" height="40" width="100"></rect>
+                            </svg>
+                            <div class="text">History</div>
+                        </a>
+                    </div>
+                </Link></li>
+                <li><Link to="/" onClick={logoutUser}>
+                <div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="110" xmlns="#">
+                                <rect class="shape" height="40" width="110"></rect>
+                            </svg>
+                            <div class="text">Logout</div>
+                        </a>
+                    </div>
+                </Link></li>
             </>
         )
     }
@@ -48,8 +82,10 @@ function Header() {
         <header>
             <div className="menu" onClick={() => setMenu(!menu)}>
                 <img src={Menu} alt="" width="30" />
+               
             </div>
-
+            
+            
             <div className="logo">
                 <h1>
                     <Link to="/">{isAdmin ? 'Admin' : 'CALA SHOP'}</Link>
@@ -57,13 +93,40 @@ function Header() {
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
-                <li><Link to="/about">{isAdmin ? '' : 'About'}</Link></li>
+                <li><Link to="/">
+                    <div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="110" xmlns="#">
+                                <rect class="shape" height="40" width="110"></rect>
+                            </svg>
+                            <div class="text">{isAdmin ? 'Products' : 'Shop'}</div>
+                        </a>
+                    </div>
+                </Link></li>
+                <li><Link to="/about">
+                <div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="110" xmlns="#">
+                                <rect class="shape" height="40" width="110"></rect>
+                            </svg>
+                            <div class="text">About</div>
+                        </a>
+                    </div>
+                </Link></li>                                    
 
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Login ✥ Register</Link></li>
+                    isLogged ? loggedRouter() : <li><Link to="/login">
+                    <div class="btn-login">
+                        <a id="btn-outline" href="#" target="_blank">
+                            <svg height="40" width="210" xmlns="#">
+                                <rect class="shape" height="40" width="210"></rect>
+                            </svg>
+                            <div class="text">Login ✥ Register</div>
+                        </a>
+                    </div>
+                    </Link></li>
                 }
 
                 <li onClick={() => setMenu(!menu)}>

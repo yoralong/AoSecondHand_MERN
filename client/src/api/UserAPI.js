@@ -35,7 +35,7 @@ function UserAPI(token) {
     
 
     const addCart = async(product) => {
-        if (!isLogged) return alert("Please login to continue buying")
+        if (!isLogged) return alert("Vui lòng đăng nhập để tiếp tục mua hàng")
 
         const check = cart.every(item => {
             return item._id !== product._id
@@ -49,7 +49,7 @@ function UserAPI(token) {
             })
 
         } else {
-            alert("This product has been added to cart.")
+            alert("Sản phẩm này đã được thêm vào giỏ hàng.")
         }
     }
 

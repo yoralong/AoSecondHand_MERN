@@ -3,6 +3,7 @@
     overflow: hidden;
     height: 500px;
     padding: 15px;
+    background: #00000014;
     box-shadow: 0 0 15px #ddd;
     margin: 10px 0;
     position: relative;
@@ -23,7 +24,7 @@
     color: #323232;
 }
 .product_card span{
-    color: crimson;
+    color: black;
 }
 .product_box p{
     width: 100%;
@@ -49,10 +50,83 @@
     letter-spacing: 2px;
     padding: 6px;
 }
-#btn_buy{
+button {
+    margin: 0;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .custom-btnn {
+    width: 256px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+.btn-9 {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .btn-9:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #CC6633 0%, #FF6600 74%);
+    transition: all 0.3s ease;
+  }
+  .btn-9:hover {
+    background: transparent;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: #fff;
+  }
+  .btn-9:hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+/* #btn_buy{
     background: #555;
     margin-right: 5px;
 }
+
 #btn_buy:first-child{
     display: flex;
     justify-content: space-evenly;
@@ -65,9 +139,153 @@
     background-color: #bf8a49;
     color: #ffff;
     
-}
-
-#btn_view{
+} */
+.btn-7 {
+    background: linear-gradient(0deg, rgb(0, 204, 255) 0%, rgb(2, 60, 251) 100%);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgb(0, 204, 255);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-7:hover{
+      color: white;
+      background: transparent;
+    }
+    .btn-7:hover:before {
+      height: 100%;
+    }
+    .btn-7:hover:after {
+      width: 100%;
+    }
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgb(2, 60, 251);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+    .btn-7 span:hover:after {
+      width: 100%;
+    }
+    /* ============================================ */
+    .btn-8 {
+      background: linear-gradient(0deg, rgb(0, 204, 255) 0%, rgb(2, 60, 251) 100%);
+        line-height: 42px;
+        padding: 0;
+        border: none;
+      }
+      .btn-8 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .btn-8:before,
+      .btn-8:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgb(0, 204, 255);
+        box-shadow:
+         -7px -7px 20px 0px rgba(255,255,255,.9),
+         -4px -4px 5px 0px rgba(255,255,255,.9),
+         7px 7px 20px 0px rgba(0,0,0,.2),
+         4px 4px 5px 0px rgba(0,0,0,.3);
+        transition: all 0.3s ease;
+      }
+      .btn-8:before{
+         height: 0%;
+         width: 2px;
+      }
+      .btn-8:after {
+        width: 0%;
+        height: 2px;
+      }
+      .btn-8:hover{
+        color: white;
+        background: transparent;
+      }
+      .btn-8:hover:before {
+        height: 100%;
+      }
+      .btn-8:hover:after {
+        width: 100%;
+      }
+      .btn-8 span:before,
+      .btn-8 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgb(2, 60, 251);
+        box-shadow:
+         -7px -7px 20px 0px rgba(255,255,255,.9),
+         -4px -4px 5px 0px rgba(255,255,255,.9),
+         7px 7px 20px 0px rgba(0,0,0,.2),
+         4px 4px 5px 0px rgba(0,0,0,.3);
+        transition: all 0.3s ease;
+      }
+      .btn-8 span:before {
+        width: 2px;
+        height: 0%;
+      }
+      .btn-8 span:after {
+        height: 2px;
+        width: 0%;
+      }
+      .btn-8 span:hover:before {
+        height: 100%;
+      }
+      .btn-8 span:hover:after {
+        width: 100%;
+      }
+/* #btn_view{
     background: teal;
     margin-left: 5px;
     
@@ -107,7 +325,7 @@
 #btn_view1:hover{
 	background-image: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
     color: whitesmoke;
-}
+} */
 
 .product_card input{
     position: absolute;
